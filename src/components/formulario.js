@@ -61,14 +61,14 @@ export default function Formulario({crearCita}) {
 
   return (
     <Fragment>
-      <h2>Crear Cita</h2>
+      <h2>Crear Tarea</h2>
 
       {error ? (
         <p className="alerta-error">Todos los campos son obligatorios</p>
       ) : null}
 
       <form onSubmit={handleSubmit}>
-        <label>Nombre Mascota</label>
+        <label>Nombre Tarea</label>
         <input
           type="text"
           name="mascota"
@@ -78,7 +78,7 @@ export default function Formulario({crearCita}) {
           value={mascota}
         />
 
-        <label>Nombre propietario</label>
+        <label>Responsable</label>
         <input
           type="text"
           name="propietario"
@@ -106,7 +106,7 @@ export default function Formulario({crearCita}) {
           value={hora}
         />
 
-        <label>Sintomas</label>
+        <label>Descripcion</label>
         <textarea
           className="u-full-width"
           name="sintomas"
@@ -115,7 +115,7 @@ export default function Formulario({crearCita}) {
         ></textarea>
 
         <button type="submit" className="u-full-width button-primary">
-          Agregar Cita
+          Agregar Tarea
         </button>
       </form>
     </Fragment>
